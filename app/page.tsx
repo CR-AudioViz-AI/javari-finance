@@ -18,7 +18,7 @@ export default function Page() {
   }
   return (
     <div style={{minHeight:"100vh",background:"#040912"}}>
-      <nav style={{background:"#1E3A5F",padding:"0 20px",height:52,display:"flex",alignItems:"center",justifyContent:"space-between",borderBottom:"1px solid rgba(0,180,216,0.15)"}}>
+      <nav data-app-chrome style={{background:"#1E3A5F",padding:"0 20px",height:52,display:"flex",alignItems:"center",justifyContent:"space-between",borderBottom:"1px solid rgba(0,180,216,0.15)"}}>
         <div style={{display:"flex",alignItems:"center",gap:8}}><span style={{fontSize:20}}>💰</span><span style={{fontWeight:800,color:"#00B4D8",fontSize:15}}>Javari Finance</span></div>
         <a href="https://craudiovizai.com/auth/signup" style={{background:"#FF0800",color:"#fff",borderRadius:7,padding:"5px 14px",fontSize:12,fontWeight:700,textDecoration:"none"}}>Sign Up Free</a>
       </nav>
@@ -56,7 +56,7 @@ export default function Page() {
           {output&&<div style={{fontSize:13,color:"#e2e8f0",marginTop:12,lineHeight:1.7,whiteSpace:"pre-wrap"}}>{output}</div>}
         </div>
       </section>
-      <footer style={{borderTop:"1px solid rgba(0,180,216,0.08)",padding:"10px 24px",textAlign:"center"}}>
+      <footer data-app-chrome style={{borderTop:"1px solid rgba(0,180,216,0.08)",padding:"10px 24px",textAlign:"center"}}>
         <p style={{color:"#374151",fontSize:11,margin:0}}>© 2026 CR AudioViz AI, LLC · EIN: 39-3646201 · <a href="https://craudiovizai.com" style={{color:"#00B4D8",textDecoration:"none"}}>craudiovizai.com</a></p>
       </footer>
     </div>

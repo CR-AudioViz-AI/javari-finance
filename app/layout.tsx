@@ -1,6 +1,7 @@
 // app/layout.tsx — Javari Finance
 // CR AudioViz AI · EIN 39-3646201 · June 2026
 import type { Metadata } from "next";
+import { EmbedBridge, EMBED_PREPAINT_SCRIPT } from '@craudioviz/platform-sdk'
 export const metadata: Metadata = {
   title: "Javari Finance | CR AudioViz AI",
   description: "AI-powered personal finance tools — budgeting, debt payoff planning, savings goals, and financial reports. Free to start.",
@@ -31,11 +32,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <script dangerouslySetInnerHTML={{ __html: EMBED_PREPAINT_SCRIPT }} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://craudiovizai.com/icon.png" type="image/png" />
       </head>
       <body style={{ margin: 0, padding: 0, background: "#040912",
         color: "#e2e8f0", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+        <EmbedBridge />
         {children}
       </body>
     </html>
